@@ -1,0 +1,15 @@
+{
+    "files.encoding": "gb2312",
+    "editor.codeActionsOnSaveTimeout": 30000,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "files.exclude": {
+        "**/Objects": true
+    },
+    "files.associations": {
+        "applib.h": "c",
+        "dwdriver.h": "c",
+        "nrk10.h": "c",
+        "sys.h": "c"
+    }
+}
