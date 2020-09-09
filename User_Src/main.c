@@ -37,7 +37,7 @@ int main()
 	TIM4_PWM_Init(7200, 0);		 //10Khz.
 	TIM_SetCompare3(TIM4, 3000); //4.6v
 	screenCheck();
-
+	delay_ms(1000);
 	dwStopMusic();
 	TIM3_Int_Init(99, 70); //100us
 	Adc_Init();

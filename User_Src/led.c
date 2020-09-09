@@ -27,11 +27,11 @@ void LED_Init(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4|GPIO_Pin_6;	 // SOUND		 
 	GPIO_Init(GPIOA, &GPIO_InitStructure);	  				
 	GPIO_ResetBits(GPIOA,GPIO_Pin_4|GPIO_Pin_6); 						  
-
+	delay_ms(1000);
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable, ENABLE); 
 	//GPIO_Pin_0: BACK2; GPIO_Pin_2: BACK1; GPIO_Pin_3; PUMP; GPIO_Pin_4: COOL-ON
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_3|GPIO_Pin_4|
-									GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7|GPIO_Pin_9;				 
+									GPIO_Pin_5|GPIO_Pin_7|GPIO_Pin_9;				 
 	GPIO_Init(GPIOB, &GPIO_InitStructure);
 	GPIO_ResetBits(GPIOB,GPIO_Pin_0|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|
 									GPIO_Pin_6|GPIO_Pin_9); 	
