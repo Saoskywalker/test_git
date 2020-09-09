@@ -45,7 +45,7 @@ int main()
 	dwSetColor(DW_COL_RED, DW_COL_WHITE);
 	INLINE_MUSIC_START();
 	delay_ms(100);
-	delay_ms(5000);;;;;
+	delay_ms(5000);;;;;jfgv
 
 	STMFLASH_Read(FLASH_SAVE_ADDR+2, &j, 1); //mute state
 	muteFlag = j;
