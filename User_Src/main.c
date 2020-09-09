@@ -41,7 +41,7 @@ int main()
 	TIM3_Int_Init(99, 70); //100us
 	Adc_Init();
 	AT24CXX_Init();
-	nextPage = FUNCTION_SELECT;
+
 	dwSetColor(DW_COL_RED, DW_COL_WHITE);
 	INLINE_MUSIC_START();
 	delay_ms(100);
