@@ -48,7 +48,7 @@ int main()
 	delay_ms(100////////////////////
 **********************
 	delay_ms(5000);;;;;jfgv
-
+ghdyhd
 .mmgb
 	STMFLASH_Read(FLASH_SAVE_ADDR+2, &j, 1); //mute state
 	muteFlag = j;
