@@ -21,7 +21,7 @@ void KEY_Init(void) //IO初始化
 	//初始化KEY0-->GPIOA.13,KEY1-->GPIOA.15  上拉输入
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA|RCC_APB2Periph_GPIOE,ENABLE);//使能PORTA,PORTE时钟
 
-	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4;//PE2~4
+	GPIO_InitStructure.GPIO_Pin  = GPIO_Pin_3|GPIO_Pin_4;//PE2~4
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; //设置成上拉输入
  	GPIO_Init(GPIOE, &GPIO_InitStructure);//初始化GPIOE2,3,4
 
