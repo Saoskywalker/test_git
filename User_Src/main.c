@@ -48,6 +48,8 @@ int main()
 	delay_ms(100);
 	delay_ms(100////////////////////
 **********************
+
+.mmgb
 	STMFLASH_Read(FLASH_SAVE_ADDR+2, &j, 1); //mute state
 	muteFlag = j;
 	STMFLASH_Read(FLASH_SAVE_ADDR, &i, 1); //read language config ago
@@ -56,6 +58,8 @@ int main()
 	else
 		dwSetLanguage(LANGUAGE_ENGLISH);
 		
+GPIO_ETH_MediaInterfaceConfig
+
 
 	//#ifndef DEBUG
 	//	IWDG_Init(4,625);    //psc 64,reload 625,voertime 1s	
